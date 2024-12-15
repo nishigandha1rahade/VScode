@@ -1,0 +1,42 @@
+import random
+
+# Number gussing game
+
+print("WELCOME TO THE NUMBER GUSSING GAME!")
+print("I HAVE SELECTED NUMBER BETWEEN 1 AND 100.CAN YOU GUESS WHAT IS IT?")
+
+# generate number between 1 and 100
+
+secret_number = random.randint(1,100)
+attempts = 0
+
+
+while True:
+    guess = int(input("enter number you guess:"))
+    attempts += 1
+
+
+    if guess < secret_number:
+        print("Too Low! Try again.")
+    elif guess > secret_number:
+        print("Too High! Try again.")
+    else:
+        print(f"Congratulation! you guessed it in {attempts} attempts. ")
+        break
+
+
+
+
+
+
+# explanation
+
+#Random Number: The program generates a random number between 1 and 100 using the random module.
+
+#User Input: The player guesses the number.
+
+#Feedback: The program provides hints like "Too low!" or "Too high!" based on the guess.
+
+#Loop: The game continues until the user guesses the correct number.
+
+#Result: The program congratulates the player and shows the number of attempts taken.

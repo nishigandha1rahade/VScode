@@ -1,0 +1,56 @@
+A = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,10,21,21,23,34,45]
+# Accessing elements from list using indexing
+print(A[11])
+
+# Accessing elements from list using slicing
+print(A[0:20:2])
+
+# Adds an itom to end of the list
+A.append(10)
+print(A)
+
+# Extends the list by appending elements from an iterable
+A.extend([6,7,8,9,10])
+print(A)
+
+# Inserts an item at a specific position
+A.insert(0,1)
+print(A)
+
+#Removes the first occurrence of an item
+A.remove(1)
+print(A)
+
+#Removes and returns an item at a specific position (last by default)
+A.pop(0)
+print(A)
+
+#sort in ascending order
+A.sort()
+print(A)
+
+#sort in descending order
+A.sort(reverse=True)
+print(A)
+
+# Reversing a list
+A.reverse()
+print(A)
+
+
+# Returns the index of the first occurrence of an item
+print(A.index(10))
+
+
+
+# Returns the number of occurrences of an item
+print(A.count(10))
+
+
+# clear all the elements
+A.clear()
+print(A)
+
+# Returns a shallow copy of the list
+B=A.copy()
+print(B)

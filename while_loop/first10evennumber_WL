@@ -1,0 +1,8 @@
+number = 1  # Start from 1
+count = 0   # Counter to keep track of how many even numbers are printed
+
+while count < 10:  # Loop continues until 10 even numbers are printed
+    if number % 2 == 0:  # Check if the current number is even
+        print(number)    # If it's even, print the number
+        count += 1       # Increment the counter to indicate one more even number is printed
+    number += 1          # Move to the next number (even or odd)

@@ -1,0 +1,19 @@
+number = int(input("enter the number between 1 to 7:"))
+
+
+if number == 1:
+    print("its monday")
+elif number == 2:
+    print("its tuesday")
+elif number ==3:
+    print("its wednesday")
+elif number ==4:
+    print("its thirsday")
+elif number ==5:
+    print("its friday")
+elif number ==6:
+    print("its saturday")
+elif number ==7:
+    print("its sunday")
+else:
+    print("please print the number between 1 to 7")

@@ -1,0 +1,7 @@
+number = 1
+count =  0
+
+while count<=10:
+    if number%2 !=0:
+        print(number)
+        count

@@ -1,0 +1,3 @@
+A = [ 123,345,678,90,234,21,32,12]
+smallest = min(A)
+print(smallest)

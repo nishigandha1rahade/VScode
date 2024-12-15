@@ -1,0 +1,64 @@
+# Alternate Tic-Tac-Toe Game
+
+# Function to print the board
+def print_board(board):
+    print("\n")
+    for row in board:
+        print(" | ".join(row))
+        print("---------")
+    print("\n")
+
+# Function to check if the current player has won
+def check_win(board, player):
+    # Check rows and columns
+    for i in range(3):
+        if all([cell == player for cell in board[i]]) or all([board[j][i] == player for j in range(3)]):
+            return True
+    # Check diagonals
+    if board[0][0] == player and board[1][1] == player and board[2][2] == player:
+        return True
+    if board[0][2] == player and board[1][1] == player and board[2][0] == player:
+        return True
+    return False
+
+# Function to check if the game is a tie
+def check_tie(board):
+    return all([cell != " " for row in board for cell in row])
+
+# Main function to play the game
+def play_game():
+    board = [[" " for _ in range(3)] for _ in range(3)]  # Create an empty 3x3 board
+    player = "X"  # Player X starts the game
+
+    while True:
+        print_board(board)
+
+        # Get player move
+        row = int(input(f"Player {player}, enter the row (0, 1, 2): "))
+        col = int(input(f"Player {player}, enter the column (0, 1, 2): "))
+
+        # Ensure the move is valid
+        if board[row][col] != " ":
+            print("Invalid move! Try again.")
+            continue
+        
+        # Make the move
+        board[row][col] = player
+
+        # Check for win or tie
+        if check_win(board, player):
+            print_board(board)
+            print(f"Player {player} wins!")
+            break
+        elif check_tie(board):
+            print_board(board)
+            print("It's a tie!")
+            break
+
+        # Switch player
+        player = "O" if player == "X" else "X"
+
+# Run the game
+if __name__ == "__main__":
+    play_game()
+

@@ -1,0 +1,12 @@
+a = [1, 2, 3, 4, 5]
+
+# Initialize a counter to zero
+count = 0
+
+# Loop through each element in the list
+for val in a:
+  
+    # Increment the counter for each element
+    count += 1
+
+print(count)

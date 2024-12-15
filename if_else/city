@@ -1,0 +1,11 @@
+city = str(input("enter the name of the city:"))
+
+
+if city == "Delhi":
+    print("the momentum is,Red Fort")
+ef city == "Agra":
+    print("the momentum is,Taj Mahal")
+ef city == "Jaipur":
+    print("the momentum is,Jai Mahal")
+else:
+    print("correct name of the city")

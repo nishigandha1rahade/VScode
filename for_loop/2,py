@@ -1,0 +1,5 @@
+given_range = 101
+
+for i in range(1,given_range):
+    if i % 2  == 0:
+        print(i)

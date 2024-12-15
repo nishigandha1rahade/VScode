@@ -1,0 +1,6 @@
+A = [ 1,2,3,4,5,67,9,90,23,45,67,87,98,334,89]
+
+if 100 in A:
+    print("element is exists")
+else:
+    print("element is not exists")

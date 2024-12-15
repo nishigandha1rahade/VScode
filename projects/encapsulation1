@@ -1,0 +1,64 @@
+class bike:
+    def __init__(self,brand,model,year):
+        self.__brand = brand   # private attribute
+        self.__model = model # private attribute
+        self.__year = year # private attribute
+
+
+
+    #Getter method for brand
+    def get_brand(self):
+        return self.__brand
+    
+
+    #setter method for brand
+    def set_brand(self,brand):
+        self.__brand = brand
+
+
+    #Getter method for model
+    def get_model(self):
+        return self.__model
+    
+    #Setter method for brand
+    def set_model(self,model):
+        self.__model = model
+
+    
+    #Getter method for year
+    def get_year(self):
+        return self.__year
+    
+    #Setter method for year
+    def set_year(self,year):
+        self.__year = year
+
+
+    def display_information(self):
+        print(f"car details: {self.__brand}  {self.__model}  ({self.__year})")
+
+
+    
+#Creating object of the bike class
+my_bike = bike("bullet","new",2024)
+
+
+#Aceesing Attributes via getter methods
+my_bike.display_information()
+
+
+
+#changing objects value of the bike class
+my_bike.set_brand("Activa")
+my_bike.set_model("platinium")
+my_bike.set_year(2025)
+
+
+#Acessing Attributes via getter methods
+my_bike.display_information()
+
+
+
+
+
+

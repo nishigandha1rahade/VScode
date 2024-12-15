@@ -1,0 +1,46 @@
+def add(a,b):
+    return a+b
+
+
+def substract(a,b):
+    return a-b
+
+
+def multiply(a,b):
+    return a*b
+
+
+def divide(a,b):
+
+  if b != 0:
+    return a / b
+  else:
+    return "Division by 0 is not allowed!"
+
+
+print("WELCOME TO THE SIMPLE CALCULATOR!")
+print("choose an operation:")
+print("1.add")
+print("2.substract")
+print("3.multiply")
+print("4.divide")
+
+
+
+choice  = input("enter a choice in (1/2/3/4) : ")
+
+
+num1 = float(input("enter first number:"))
+num2 = float(input("enter second number:"))
+
+
+if choice == '1':
+    print(f"the result is: {add(num1,num2)}")
+elif choice == '2':
+    print(f"the result is: {substract(num1,num2)}")
+elif choice == '3':
+    print(f"the result is: {multiply(num1,num2)}")
+elif choice == '2':
+    print(f"the result is: {divide(num1,num2)}")
+else:
+    print("Invalid input,please try again")

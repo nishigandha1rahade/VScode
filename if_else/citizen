@@ -1,0 +1,7 @@
+age = int(input("enter the age of person:"))
+
+
+if age >=60:
+    print("this person is senior citizen")
+else:
+    print("this person is not senior citizen")

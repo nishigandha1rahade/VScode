@@ -1,0 +1,7 @@
+for i in range(50):
+
+     
+    if i ==48:
+    
+        break
+    print(i)

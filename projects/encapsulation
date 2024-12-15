@@ -1,0 +1,47 @@
+class car:
+    def __init__(self,make,model,year):
+        self.make = make    # public attribute
+        self.model = model  # public attribute
+        self.__year = year  #private attributes
+
+
+    # getter method for 'year'
+    def __year(self):
+        return self.__year
+    
+
+
+    # setter method for 'year'
+    def set__year(self,year):
+        if year>1900:
+            self.__year = year
+        else:
+            print("Invalid Year!")
+
+
+ # method to display information about the car
+print(f"car:{self.make}  {self.model} ({self._year})")
+
+
+# creating an instance of the car class
+car1 = car("Toyoto","camry",2020)
+
+
+#Acess public attributes directly 
+print(car1.make)    #output : Toyoto
+print(car1.make)   #output  : camry
+
+
+    #Acess private attributes directly(will result in an error )
+    # print(car1.__year)   # AttributeError: "car"  object has no attribute '__year'
+
+
+    #Accessing private attribute using setter
+car1.set__year(2022)
+car1.display__info()  
+
+
+    #trying to set an invalid year
+car1.set__year(1800)
+
+        

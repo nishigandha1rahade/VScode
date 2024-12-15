@@ -1,0 +1,8 @@
+ch = input("enter the charachter:")
+
+vowel = "aeiouAEIOU"
+
+if ch in vowel:
+     print("enter charachter is vowel ")
+else:
+    print("enter charachter is not vowel")

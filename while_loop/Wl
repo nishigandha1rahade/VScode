@@ -1,0 +1,6 @@
+num = 1
+
+while num <=10:
+    square = num ** 2
+    print(f"Number:{num},Square:{square}")
+    num += 1 
